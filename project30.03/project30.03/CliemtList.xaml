@@ -1,0 +1,15 @@
+﻿<Window x:Class="project30._03.CliemtList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:project30._03"
+        mc:Ignorable="d"
+        Title="Список клиентов" Height="450" Width="800" Loaded="Window_Loaded" Background="LightBlue">
+    <Grid>
+        <Label Content="Список клиентов" Margin="320,24,148.6,0" VerticalAlignment="Top" Height="61" Width="325" FontFamily="Tw Cen MT Condensed Extra Bold" FontSize="26"/>
+        <Frame x:Name="FrameCenter" Content="" Height="420" Width="794" Margin="0,0,-0.4,0"/>
+        <Image Margin="10,10,662,300" Source="Image1.png" Stretch="Fill" VerticalAlignment="Top" HorizontalAlignment="Left" Width="124" Height="109"/>
+
+    </Grid>
+</Window>
