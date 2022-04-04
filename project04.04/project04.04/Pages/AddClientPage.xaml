@@ -1,0 +1,28 @@
+﻿<Page x:Class="project04._04.Pages.AddClientPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:project04._04.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="295"
+      Title="AddClientPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBox Grid.Row="1" Width="175" Height="30" Margin="62,9.6,58.2,10.8" Text="Фамилия"/>
+        <TextBox Grid.Row="2" Width="175" Height="30" Margin="62,10.2,58.2,10.2" Text="Имя"/>
+        <TextBox Grid.Row="3" Width="175" Height="30" Margin="62,9.8,58.2,9.8" Text="Отчество"/>
+        <TextBox Grid.Row="4" Width="175" Height="30" Margin="62,10.2,58.2,9.4" Text="Номер телефона"></TextBox>
+        <TextBlock Text="Добавить нового клиента" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15" Margin="59,25,58.2,25"></TextBlock>
+        <Button Grid.Row="5"  Width="175" Height="30" Content="Добавить клиента" Margin="60,13.4,60.2,11.8"></Button>
+
+    </Grid>
+</Page>

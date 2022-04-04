@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище ProjectModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Avtorization">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="login" Type="nvarchar" MaxLength="15" Nullable="false" />
+    <Property Name="pass" Type="nvarchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="familia" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="imya" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="otchestvo" Type="nvarchar" MaxLength="50" />
+    <Property Name="nomer" Type="nvarchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Хранилище ProjectModelContainer">
+    <EntitySet Name="Avtorization" EntityType="Self.Avtorization" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Client" EntityType="Self.Client" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

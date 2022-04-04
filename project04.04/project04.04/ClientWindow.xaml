@@ -1,0 +1,25 @@
+﻿<Window x:Class="project04._04.ClientWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:project04._04"
+        mc:Ignorable="d"
+        Title="Список клиентов" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="435*"/>
+            <ColumnDefinition Width="359*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="59*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Список клиентов" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Grid.ColumnSpan="2" Margin="279,30,279.6,30"></TextBlock>
+        <DataGrid x:Name="GridClient" Grid.Row="1" Margin="0,0,0.4,0.2" IsEnabled="True"/>
+        <Button Grid.Column="0" Grid.Row="2" Width="175" Content="Удалить клиента"></Button>
+        <Frame x:Name="clientFrame" Grid.ColumnSpan="2" Margin="434,90,-0.4,0" Grid.RowSpan="3" NavigationUIVisibility="Hidden" />
+
+    </Grid>
+</Window>
